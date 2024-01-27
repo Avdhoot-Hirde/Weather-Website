@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald:wght@700&family=Playfair+Display:ital,wght@1,435&family=Salsa&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Salsa', cursive;
+}
+body{
+    background-image: url(https://rare-gallery.com/uploads/posts/124416-miui-8-rainy-weather-background-minimal-hd.png);
+    background-size: cover;
+}
+.body{
+    width: 85rem;
+    position: relative;
+    top: 7rem;
+    left: 5.5rem;
+}
+#cityname{
+    border: 2px solid black;
+    padding: 5px;
+    width: 32rem;
+    position: absolute;
+    top: 10rem;
+    left: 27rem;
+    background-color: white;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+#cityname::placeholder{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(25, 1, 95);
+}
+#cityname:focus{
+    outline: none;
+}
+#submit , #reset{
+    border: none;
+    padding: 5px;
+    position: absolute;
+    top: 14rem;
+    left: 35rem;
+    background-color: transparent;
+    font-size: 28px;
+    color: rgb(25, 1, 95);
+}
+#reset{
+    position: absolute;
+    left: 43rem;
+}
+#submit:hover ,#reset:hover{
+    text-shadow: 2px 3px 4px;
+}
+#cityout{
+    position: absolute;
+    top: 2rem;
+    width: 40rem;   
+    left: -7rem;
+    text-align: center;
+    font-size: 4rem;
+    color: white ;
+    display: block;
+}
+.detail{
+    position: absolute;
+    left: 0;
+    top: 8rem;
+}
+#description{
+    color: white;
+    font-size: 2rem;
+    position:relative;
+    display: inline;
+    top: 11rem;
+    left: 2rem;
+}
+#temp{
+    color: white;
+    position:relative;
+    left: 6rem;
+    font-size: 4rem;
+}
+#wind{
+    color: white;
+    font-size: 2rem;
+    position:relative;
+    display: inline;
+    top: 4rem;
+    left: 14rem;
+}
+#bg{
+    height: 12rem;
+    width: 12rem;
+    position: absolute;
+    right: 6rem;
+    top: 8rem;
+}
+@media (max-width: 600px) {
+    html{
+        scroll-padding: none;
+    }
+    .body{
+        
+    }
+}
